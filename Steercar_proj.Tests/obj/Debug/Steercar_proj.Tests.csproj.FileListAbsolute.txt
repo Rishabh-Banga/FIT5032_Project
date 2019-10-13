@@ -56,3 +56,13 @@ C:\Users\risha\source\repos\Steercar_proj.Tests\obj\Debug\Steercar_proj.Tests.cs
 C:\Users\risha\source\repos\Steercar_proj.Tests\obj\Debug\Steercar_proj.Tests.csproj.CopyComplete
 C:\Users\risha\source\repos\Steercar_proj.Tests\obj\Debug\Steercar_proj.Tests.dll
 C:\Users\risha\source\repos\Steercar_proj.Tests\obj\Debug\Steercar_proj.Tests.pdb
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Microsoft.Owin.Security.Google.xml
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\SendGrid.dll
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\WebGrease.dll
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\SendGrid.pdb
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\SendGrid.xml
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\risha\source\repos\Steercar_proj.Tests\bin\Debug\Antlr3.Runtime.pdb

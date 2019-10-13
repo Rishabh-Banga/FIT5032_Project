@@ -39,5 +39,9 @@ namespace Steercar_proj.Models
                 .WithRequired(e => e.AspNetUser)
                 .HasForeignKey(e => e.UserId);
         }
+
+        public System.Data.Entity.DbSet<Steercar_proj.Models.Event> Events { get; set; }
+
+        public System.Data.Entity.DbSet<Steercar_proj.Models.Location> Locations { get; set; }
     }
 }

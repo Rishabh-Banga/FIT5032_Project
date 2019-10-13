@@ -108,4 +108,7 @@ C:\Users\risha\source\repos\Steercar_proj\bin\Microsoft.CodeDom.Providers.DotNet
 C:\Users\risha\source\repos\Steercar_proj\obj\Debug\Steercar_proj.csproj.CopyComplete
 C:\Users\risha\source\repos\Steercar_proj\obj\Debug\Steercar_proj.dll
 C:\Users\risha\source\repos\Steercar_proj\obj\Debug\Steercar_proj.pdb
+C:\Users\risha\source\repos\Steercar_proj\bin\SendGrid.dll
+C:\Users\risha\source\repos\Steercar_proj\bin\SendGrid.pdb
+C:\Users\risha\source\repos\Steercar_proj\bin\SendGrid.xml
 C:\Users\risha\source\repos\Steercar_proj\obj\Debug\Steercar_proj.csprojAssemblyReference.cache
