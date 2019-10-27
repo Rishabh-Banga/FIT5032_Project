@@ -48,6 +48,11 @@ namespace Steercar_proj.Controllers
             return View();
         }
 
+        public ActionResult Chart()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Send_Email(EmailSenderVIewModel model)
         {

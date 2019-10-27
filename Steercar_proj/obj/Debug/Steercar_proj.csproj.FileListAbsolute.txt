@@ -228,3 +228,4 @@ C:\Users\risha\Documents\VisualStudio_FIT5032_Project\FIT5032_Project\Steercar_p
 C:\Users\risha\Documents\VisualStudio_FIT5032_Project\FIT5032_Project\Steercar_proj\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\Users\risha\Documents\VisualStudio_FIT5032_Project\FIT5032_Project\Steercar_proj\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\risha\Documents\VisualStudio_FIT5032_Project\FIT5032_Project\Steercar_proj\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\risha\Documents\VisualStudio_FIT5032_Project\FIT5032_Project\Steercar_proj\obj\Debug\Steercar_proj.csprojAssemblyReference.cache
