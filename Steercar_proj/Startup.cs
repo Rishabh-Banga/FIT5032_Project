@@ -9,6 +9,7 @@ namespace Steercar_proj
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            app.MapSignalR();
         }
     }
 }

@@ -43,6 +43,10 @@ namespace Steercar_proj.Controllers
         {
             return View(new EmailSenderVIewModel());
         }
+        public ActionResult Chat()
+        {
+            return View();
+        }
 
         [HttpPost]
         public ActionResult Send_Email(EmailSenderVIewModel model)
