@@ -1,0 +1,75 @@
+﻿@model Steercar_proj.Models.Car
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarManDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarManDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarMinKm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarMinKm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarNoSeat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarNoSeat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarNo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,348 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25F35062-1FDF-4217-9E26-E98A005DFC2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Steercar_proj.Tests</RootNamespace>
+    <AssemblyName>Steercar_proj.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework">
+      <HintPath>..\Steercar_proj\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions">
+      <HintPath>..\Steercar_proj\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Steercar_proj\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Steercar_proj\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\HomeControllerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="scripts\bootstrap-datepicker.js" />
+    <Content Include="scripts\bootstrap-datepicker.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-CA.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.tk.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="scripts\tinymce\jquery.tinymce.min.js" />
+    <Content Include="scripts\tinymce\license.txt" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojis.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\js\emojis.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\help\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\hr\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\paste\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\print\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\quickbars\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\quickbars\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\template\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\toc\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="scripts\tinymce\skins\content\dark\content.css" />
+    <Content Include="scripts\tinymce\skins\content\dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\default\content.css" />
+    <Content Include="scripts\tinymce\skins\content\default\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\document\content.css" />
+    <Content Include="scripts\tinymce\skins\content\document\content.min.css" />
+    <Content Include="scripts\tinymce\skins\content\writer\content.css" />
+    <Content Include="scripts\tinymce\skins\content\writer\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.mobile.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\content.mobile.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.mobile.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide-dark\skin.mobile.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.inline.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.mobile.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\content.mobile.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.min.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.mobile.css" />
+    <Content Include="scripts\tinymce\skins\ui\oxide\skin.mobile.min.css" />
+    <Content Include="scripts\tinymce\themes\mobile\theme.js" />
+    <Content Include="scripts\tinymce\themes\mobile\theme.min.js" />
+    <Content Include="scripts\tinymce\themes\silver\theme.js" />
+    <Content Include="scripts\tinymce\themes\silver\theme.min.js" />
+    <Content Include="scripts\tinymce\tinymce.js" />
+    <Content Include="scripts\tinymce\tinymce.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\bootstrap-datepicker.css.map" />
+    <None Include="Content\bootstrap-datepicker.standalone.css.map" />
+    <None Include="Content\bootstrap-datepicker3.css.map" />
+    <None Include="Content\bootstrap-datepicker3.standalone.css.map" />
+    <None Include="packages.config" />
+    <None Include="scripts\tinymce\langs\readme.md" />
+    <None Include="scripts\tinymce\skins\ui\oxide-dark\fonts\tinymce-mobile.woff" />
+    <None Include="scripts\tinymce\skins\ui\oxide\fonts\tinymce-mobile.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Steercar_proj\Steercar_proj.csproj">
+      <Project>{CCA4DEA3-4F96-47B8-AF3E-33329CD5E659}</Project>
+      <Name>Steercar_proj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\Steercar_proj\packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

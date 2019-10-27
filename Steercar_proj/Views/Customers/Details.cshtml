@@ -1,0 +1,67 @@
+﻿@model Steercar_proj.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
